@@ -8,7 +8,7 @@ const users = [
 ];
 
 function getActiveUsers() {
-  return users.filter((user) => user.active = true);
+  return users.filter((user) => user.active === true);
 }
 
 function getAverageSalary() {
@@ -22,11 +22,11 @@ function getAverageSalary() {
 }
 
 function getUserById(id) {
-  return users.find((user) => user.id === "id");
+  return users.find((user) => user.id === id);
 }
 
 function getUsersByRole(role) {
-  return users.filter((user) => user.role = role);
+  return users.filter((user) => user.role === role);
 }
 
 function getAverageUsersPerRole() {
