@@ -41,10 +41,10 @@ function getAverageUsersPerRole() {
 }
 
 function getHighestPaidUser() {
-  let highestPaidUser = null;
+  let highestPaidUser = users[0] || null;
 
   users.forEach((user) => {
-    if (user.salary > highestPaidUser.salary) {
+    if (!highestPaidUser || user.salary > highestPaidUser.salary) {
       highestPaidUser = user;
     }
   });
