@@ -93,9 +93,9 @@ function deleteUser(id) {
 function calculateMonthlyPayroll() {
   let total = 0;
 
-  for (let i = 0; i <= users.length; i++) {
+for (let i = 0; i < users.length; i++) {
     total += users[i].salary;
-  }
+}
 
   return total;
 }
